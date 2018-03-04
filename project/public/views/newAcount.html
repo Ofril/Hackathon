@@ -1,54 +1,36 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>Page Title</title>
-    <script src="../javascripts/jquery-3.3.1.min.js"></script>
-    <script src="../javascripts/Resources/bootstrap.js"></script>
-    <script src="../javascripts/Resources/angular.min.js"></script>
-    <link href="../stylesheets/bootstrap-grid.css" rel="stylesheet">
-    <link href="../stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="../stylesheets/index.css" rel="stylesheet">
-</head>
-
-<body>
-    <div dir="rtl">
-        <div class="row">
-            <div id="userDitels" class="text-left">
-                <input type="text" class="form-control" placeholder="שם מלא">
-                <input type="text" class="form-control" placeholder="שם במה">
-                <input type="text" class="form-control" placeholder="סיסמה">
-                <input type="text" class="form-control" placeholder="מייל">
-                <div class="dropdown text-right">
-                    <button class="btn btn-default dropdown-toggle" type="button">
+<div dir="rtl">
+    <div class="row">
+        <div id="userDitels" class="text-left">
+            <input type="text" class="form-control" placeholder="שם מלא">
+            <input type="text" class="form-control" placeholder="שם במה">
+            <input type="text" class="form-control" placeholder="סיסמה">
+            <input type="text" class="form-control" placeholder="מייל">
+            <div class="dropdown text-right">
+                <button class="btn btn-default dropdown-toggle" type="button">
                         עיסוק
                         <span class="caret"></span>
                     </button>
-                </div>
-                <input type="text" class="form-control" placeholder="תאריך לידה">
-                <input type="text" class="form-control" placeholder="קצת על עצמי...">
             </div>
-
-            <div>
-                <div id="userPic">
-                    <img src="../images/userPic.png" class="img-rounded">
-                </div>
-                <div id="imgSrc">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputFile"></label>
-                            <input type="file">
-                        </div>
-                    </form>
-                </div>
-            </div>
+            <input type="text" class="form-control" placeholder="תאריך לידה">
+            <input type="text" class="form-control" placeholder="קצת על עצמי...">
         </div>
 
-        <div id="buttons">
-            <button type="button" class="btn btn-success">התחל ליצור!</button>
+        <div>
+            <div id="userPic">
+                <img src="../images/userPic.png" class="img-rounded">
+            </div>
+            <div id="imgSrc">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputFile"></label>
+                        <input type="file">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</body>
 
-</html>
+    <div id="buttons">
+        <button type="button" class="btn btn-success">התחל ליצור!</button>
+    </div>
+</div>
