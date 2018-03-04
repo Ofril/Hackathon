@@ -3,34 +3,32 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Advanced Search</title>
+    <title>Page Title</title>
+    <script src="../javascripts/Resources/bootstrap.js"></script>
+    <script src="../javascripts/search.js"></script>
     <link href="../stylesheets/bootstrap-grid.css" rel="stylesheet">
     <link href="../stylesheets/bootstrap.css" rel="stylesheet">
     <link href="../stylesheets/index.css" rel="stylesheet">
-    <script src="../javascripts/bootstrap.min.js"></script>
 </head>
 
 <body>
     <div dir="rtl">
-        <div class="row">
-            <h1>חיפוש מתקדם</h1>
-        </div>
-        <div class="row">
-            <li class="dropdown">
-                <a class="dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">סנן לפי תחומים
-      </a>
-                <div class="dropdown-menu dropdown-menu-center show" aria-labelledby="bd-versions">
-                    <a class="dropdown-item active">ציור</a>
-                    <a class="dropdown-item">צילום</a>
-                    <a class="dropdown-item">מוזיקה</a>
-                    <a class="dropdown-item">עיצוב</a>
-                </div>
-            </li>
-            <input class="Search" type="text" placeholder="חפש כאן...">
-            <button class="btn btn-defualt" id="buttons" type="submit">חפש</button>
-        </div>
-        <div class="row">
+        <h1 class="title text-center">חיפוש מתקדם</h1>
 
+        <div class="row">
+            <div class="form-group">
+                <select>
+    <option>סנן לפי תחום</option>
+    <option>צלם</option>
+    <option>סוכן</option>
+    <option>מוזיקאי</option>
+    <option>צייר</option>
+    <option>שחקן</option>
+    <option>פסל</option>
+</select>
+                <input type="text" placeholder="חפש כאן...">
+                <button type="button">חפש</button>
+            </div>
         </div>
     </div>
 </body>

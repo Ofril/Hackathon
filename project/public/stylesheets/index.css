@@ -17,8 +17,12 @@ body {
 
 #buttons {
     text-align: center;
+<<<<<<< HEAD
     font-family: Guttman Haim;
     margin: 3px;
+=======
+    padding-top: 30px;
+>>>>>>> d86ea5d070d114bad272cbe8aa43559d595f6e52
 }
 
 #imgSrc {
@@ -26,6 +30,7 @@ body {
     padding-right: 40px;
 }
 
+<<<<<<< HEAD
 .Search {
     text-align: center;
     font-family: Guttman Haim;
@@ -42,4 +47,8 @@ body {
 
 li {
     list-style-type: none;
+=======
+#userDitels {
+    padding-top: 30px;
+>>>>>>> d86ea5d070d114bad272cbe8aa43559d595f6e52
 }
