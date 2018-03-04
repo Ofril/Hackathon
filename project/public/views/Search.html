@@ -4,33 +4,40 @@
 <head>
     <meta charset="utf-8">
     <title>Page Title</title>
+    <script src="../javascripts/Resources/angular.min.js"></script>
+    <script src="../javascripts/Resources/jquery-3.3.1.min.js"></script>
     <script src="../javascripts/Resources/bootstrap.js"></script>
+    <script src="../javascripts/index.js"></script>
     <script src="../javascripts/search.js"></script>
     <link href="../stylesheets/bootstrap-grid.css" rel="stylesheet">
     <link href="../stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="../stylesheets/index.css" rel="stylesheet">
+    <link href="../stylesheets/Search.css" rel="stylesheet">
 </head>
 
-<body>
-    <div dir="rtl">
-        <h1 class="title text-center">חיפוש מתקדם</h1>
+<body ng-app="myApp">
 
-        <div class="row">
-            <div class="form-group">
-                <select>
-    <option>סנן לפי תחום</option>
-    <option>צלם</option>
-    <option>סוכן</option>
-    <option>מוזיקאי</option>
-    <option>צייר</option>
-    <option>שחקן</option>
-    <option>פסל</option>
-</select>
-                <input type="text" placeholder="חפש כאן...">
-                <button type="button">חפש</button>
-            </div>
+    <div dir="rtl" ng-controller="searchController">
+        <h1 class="title text-center">חיפוש מתקדם</h1>
+        <div class="form-row align-items-center">
+            <center>
+                <form class="form-inline">
+                    <div>
+                        <select class="form-control Search">
+                            <option>סנן לפי תחום</option>
+                            <option ng-repeat="type in artistTypes">{{type.displayName}}</option>
+                    </select>
+                    </div>
+                    <div>
+                        <input class="btn btn-default form-control Search" type="text" placeholder="חפש כאן...">
+                    </div>
+                    <div>
+                        <input class="btn btn-default form-control Search" type="button" value="חפש">
+                    </div>
+                </form>
+            </center>
         </div>
     </div>
+
 </body>
 
 </html>
