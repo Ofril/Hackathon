@@ -17,9 +17,14 @@ body {
 
 #buttons {
     text-align: center;
+    padding-top: 30px;
 }
 
 #imgSrc {
      padding-top: 20px;
     padding-right: 40px;
+}
+
+#userDitels {
+    padding-top: 30px;
 }
