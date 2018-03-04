@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\User\Desktop\Hackathon\HackProj\ArtIt\conf\application.conf,C:\Users\User\Desktop\Hackathon\HackProj\ArtIt\target\scala-2.12\classes\application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\User\Desktop\Hackathon\HackProj\ArtIt\conf\logback.xml,C:\Users\User\Desktop\Hackathon\HackProj\ArtIt\target\scala-2.12\classes\logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(C:\Users\User\Desktop\Hackathon\HackProj\ArtIt\conf\routes,C:\Users\User\Desktop\Hackathon\HackProj\ArtIt\target\scala-2.12\classes\routes)[0m

@@ -1,0 +1,13 @@
+eclipse
+activator eclipse
+eclipse
+run
+eclipse
+activator eclipse
+sbt new playframework/play-java-seed.g8 
+play
+apply 
+help apply
+apply eclipse
+play help
+run

@@ -1,0 +1,2 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\User\Desktop\play-java-starter-example\conf\routes:6:1: not found: value index[0m
+[0m[[0m[31merror[0m] [0m[0mGET     /                          controllers.Assets.at(path="/public/views", file: index.html) [0m
