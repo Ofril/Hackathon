@@ -1,0 +1,23 @@
+body {
+  background-color: #f5f5f5;
+}
+
+#AcountPic {
+    position: absolute;
+    top: 50px;
+    right: 300px;
+}
+
+#detalis {
+    text-align: right;
+    position: fixed;
+    top: 70px;
+    right: 550px;
+}
+
+#buttons {
+    text-align: right;
+    position: fixed;
+    top: 280px;
+    right: 270px;
+}
