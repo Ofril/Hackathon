@@ -4,30 +4,35 @@
 <head>
     <meta charset="utf-8">
     <title>Page Title</title>
+    <script src="../javascripts/Resources/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../javascripts/Resources/bootstrap.js"></script>
+    <script src="../javascripts/index.js"></script>
     <script src="../javascripts/search.js"></script>
     <link href="../stylesheets/bootstrap-grid.css" rel="stylesheet">
     <link href="../stylesheets/bootstrap.css" rel="stylesheet">
     <link href="../stylesheets/index.css" rel="stylesheet">
 </head>
 
-<body>
-    <div dir="rtl">
+<body ng-app="myApp">
+    <div dir="rtl" ng-controller="searchController">
         <h1 class="title text-center">חיפוש מתקדם</h1>
-
         <div class="row">
-            <div class="form-group">
-                <select>
-    <option>סנן לפי תחום</option>
-    <option>צלם</option>
-    <option>סוכן</option>
-    <option>מוזיקאי</option>
-    <option>צייר</option>
-    <option>שחקן</option>
-    <option>פסל</option>
-</select>
-                <input type="text" placeholder="חפש כאן...">
-                <button type="button">חפש</button>
+            <div class="form-inline">
+                <div class="form-group">
+                    <div class="col-md-6">
+                        <select class="col">
+                            <option>סנן לפי תחום</option>
+                            <option ng-repeat="type in artistTypes">{{type.displayName}}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <input class="col" type="text" placeholder="חפש כאן...">
+                    </div>
+                    <div class="col-md-6">
+                        <button class="col" type="button">חפש</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
