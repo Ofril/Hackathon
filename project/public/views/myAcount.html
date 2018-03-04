@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="project">
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <script src="../javascripts/bootstrap.js"></script>
+    <script src="../javascripts/angular.min.js"></script>
+    <script src="../javascripts/bootstrap-material-design.js"></script>
+    <script src="../javascripts/bootstrap-material-design.js.map"></script>
+    <link href="../stylesheets/bootstrap-grid.css" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/bootstrap-material-design.css" rel="stylesheet">
+    <link href="../stylesheets/myAcount.css" rel="stylesheet">
+</head>
+
+<body>
+      <div dir="rtl">
+        <div class="row">
+            <div id="AcountPic">
+                <img src="../images/userPic.png" class="img-rounded">
+            </div>
+            <div id="detalis">
+                <p style="font-size: 30px;">נועם ברדה</p>
+                <p>שחקנית</p>
+                <p>גיל: 26</p>
+                <p>למדתי משחק והשתתפתי בתפוזים</p>
+            </div>
+        </div>
+        <div id="buttons">
+            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">תמונות</a>
+            <a href="#" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">שיתופי פעולה</a>
+        </div>
+    </div>    
+    
+    <div ng-view></div>
+    
+</body>
+
+</html>
