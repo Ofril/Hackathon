@@ -57,3 +57,39 @@ li {
 #detalis {
     text-align: right;
 }
+
+table{
+    text-align: right;
+    
+}
+
+.panel-default {
+    background-color: rgb(213, 216, 217);
+    height: 700px;
+}
+
+.labels{
+
+}
+
+td{
+    height: 500%;
+    margin-bottom: 500px;
+}
+
+.form-horizontal * {
+  direction: rtl;
+}
+
+#submitButton{
+    background-color: rgb(0, 153, 51);
+}
+
+.form-control{
+    width: 300px;
+}
+
+.img {
+    height:20px;
+     width: 30px;
+}
