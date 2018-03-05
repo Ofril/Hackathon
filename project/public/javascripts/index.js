@@ -1,6 +1,6 @@
 var myApp = angular.module('myApp', ["ngRoute"]);
 
-myApp.config([('$routeProvider', '$locationProvider'), function($routeProvider, $locationProvider) {
+myApp.config([('$routeProvider', '$locationProvider'), function ($routeProvider, $locationProvider) {
     $routeProvider
         .when("/", {
             templateUrl: "../views/main.html",
@@ -17,30 +17,35 @@ myApp.config([('$routeProvider', '$locationProvider'), function($routeProvider, 
         .when("/myAccount", {
             templateUrl: "../views/myAcount.html"
         })
+        .when("/photo", {
+            templateUrl: "Phothos.html"
+        })
+        .when("/shtap", {
+            templateUrl: "Shatap.html"
+        })
         .otherwise({
             redirectTo: '/myAccount'
         });
-              
+
     $locationProvider.html5Mode(true);
 }]);
 
-myApp.controller('myCtrl', function($scope) {
-    
-    $scope.firstName= "John";
-    $scope.lastName= "Doe";
-}); 
-              
-myApp.config(function($routeProvider, $locationProvider) {
-    $locationProvider.hashPrefix('');
-    $routeProvider
-    .when("/photo", {
-        templateUrl : "Phothos.html"
-    })
-    .when("/shtap", {
-        templateUrl : "Shatap.html"
-    });
+myApp.controller('myCtrl', function ($scope) {
+
+    $scope.firstName = "John";
+    $scope.lastName = "Doe";
 });
 
-myApp.controller('photoCtrl', function($scope) {
-    $scope.photos = [{"src":"1.png"},{"src":"2.png"},{"src":"3.png"},{"src":"4.png"},{"src":"5.png"}];
+myApp.controller('photoCtrl', function ($scope) {
+    $scope.photos = [{
+        "src": "1.png"
+    }, {
+        "src": "2.png"
+    }, {
+        "src": "3.png"
+    }, {
+        "src": "4.png"
+    }, {
+        "src": "5.png"
+    }];
 });
