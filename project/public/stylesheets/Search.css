@@ -10,3 +10,13 @@ body {
     border-width: thick;
     border-color: gainsboro;
 }
+
+.panel-default{
+    background-color: rgb(213, 216, 217);
+    height: 700px;
+}
+
+button{
+    background-color: white;
+}
+
