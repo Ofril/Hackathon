@@ -13,37 +13,44 @@ public class User extends Model {
 
 	// Data Members
 	@Id
-	@Column(name ="user_id")
+	@Column(name = "user_id")
 	private int id;
 
-	@Column(name ="first_name")
+	@Column(name = "first_name")
 	private String firstName;
 
-	@Column(name ="last_name")
+	@Column(name = "last_name")
 	private String lastName;
 
-	@Column(name ="stage_name")
+	@Column(name = "stage_name")
 	private String stageName;
 
-	@Column(name ="password")
+	@Column(name = "password")
 	private String password;
 
-	@Column(name ="email")
+	@Column(name = "email")
 	private String email;
 
-	@Column(name ="birthdate")
+	@Column(name = "birthdate")
 	private Date birthdate;
 
 	@Column(name = "description")
 	private String description;
 
-	@Column(name ="profile_picture")
+	@Column(name = "profile_picture")
 	private String picture;
-	
+
+	@ManyToOne
+	@JoinColumn(name = "artist_type")
+	private ArtistType type;
+
+	@OneToMany(mappedBy = "user", targetEntity = Post.class)
+	private List<Post> posts = new ArrayList<Post>();
+
 	// Ctor
 
 	public User(int id, String firstName, String lastName, String stageName, String password, String email,
-			Date birthdate, String description, String picture) {
+			Date birthdate, String description, String picture, ArtistType type) {
 		this.setId(id);
 		this.setFirstName(firstName);
 		this.setLastName(lastName);
@@ -53,15 +60,14 @@ public class User extends Model {
 		this.setBirthdate(birthdate);
 		this.setDescription(description);
 		this.setPicture(picture);
+		this.setType(type);
 	}
-	
 
 	// Accesss Methods
 
 	public int getId() {
 		return id;
 	}
-
 
 	public void setId(int id) {
 		this.id = id;
@@ -129,6 +135,22 @@ public class User extends Model {
 
 	public void setPicture(String picture) {
 		this.picture = picture;
+	}
+
+	public ArtistType getType() {
+		return type;
+	}
+
+	public void setType(ArtistType type) {
+		this.type = type;
+	}
+    
+    public List<Post>  getPosts() {
+		return posts;
+	}
+
+	public void setType(List<Post> posts) {
+		this.posts = posts;
 	}
 
 }
