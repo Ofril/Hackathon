@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <script src="../javascripts/Resources/jquery-3.3.1.min.js"></script>
+    <script src="../javascripts/Resources/bootstrap.js"></script>
+    <script src="../javascripts/Resources/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
+    <script src="../javascripts/profileCtrl.js"></script>
+    <!--    <script src="../javascripts/Resources/bootstrap-material-design.js"></script>-->
+    <!--    <script src="../javascripts/Resources/bootstrap-material-design.js.map"></script>-->
+    <script src="../javascripts/index.js"></script>
+    <link href="../stylesheets/bootstrap-grid.css" rel="stylesheet">
+    <link href="../stylesheets/bootstrap.css" rel="stylesheet">
+    <link href="../stylesheets/bootstrap-material-design.css" rel="stylesheet">
+    <link href="../stylesheets/myAcount.css" rel="stylesheet">
+</head>
+
+<body ng-app="myApp">
+    <div ng-controller="photoCtrl">
+
+        <div dir="rtl" class="container">
+            <div class="panel panel-default">
+                <table>
+                    <tr>
+                        <td width=250px><img src="../images/userPic.png" class="img-thumbnail"></td>
+                        <td>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <h1>נועם ברדה</h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>גיל: 26</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>למדתי משחק והשתתפתי בתפוזים</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="routeBtns row">
+                                <button class="btn btn-dark" type="button"><b>תמונות</b></button>
+                                <button class="btn btn-dark" type="button"><b>שיתופי פעולה</b></button>
+                            </div>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+                <center>
+                    <img class="img" src="../images/a.jpg" />
+                    <img class="img" src="../images/a.jpg" />
+                    <img class="img" src="../images/a.jpg" />
+                    <img class="img" src="../images/a.jpg" />
+                    <img class="img" src="../images/a.jpg" />
+                    <img class="img" src="../images/a.jpg" />
+
+
+                </center>
+
+            </div>
+        </div>
+
+
+        <!--
+      <div dir="rtl">
+        <div class="row">
+            <div id="AcountPic">
+                <img src="../images/userPic.png" class="img-rounded">
+            </div>
+            <div id="detalis">
+                <p style="font-size: 30px;">נועם ברדה</p>
+                <p>שחקנית</p>
+                <p>גיל: 26</p>
+                <p>למדתי משחק והשתתפתי בתפוזים</p>
+            </div>
+        </div>
+        <div id="buttons">
+            <a href="#photo" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">תמונות</a>
+            <a href="#shtap" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">שיתופי פעולה</a>
+            
+            <div ng-view></div>
+        </div>
+        
+        </div>   
+-->
+    </div>
+</body>
+
+</html>

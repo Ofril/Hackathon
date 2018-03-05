@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+    <script src="../javascripts/Resources/jquery-3.3.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="../javascripts/Resources/angular.min.js"></script>
+    <link href="../stylesheets/bootstrap-grid.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../stylesheets/index.css" rel="stylesheet">
+</head>
+
+<body>
+    <div dir="rtl" class="container">
+        <div class="panel panel-default">
+         
+           <form>
+            <div class="form-group">
+                <label for="firstName">שם פרטי:</label>
+                <input type="password" class="form-control" id="firstName">
+            </div>
+            <div class="form-group">
+                <label for="lastName">שם משפחה:</label>
+                <input type="password" class="form-control" id="lastName">
+            </div>
+            <div class="form-group">
+                <label for="userName">שם במה:</label>
+                <input type="password" class="form-control" id="userName">
+            </div>
+            <div class="form-group">
+                <label for="password">סיסמה:</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div class="form-group">
+                <label for="email">אימייל:</label>
+                <input type="password" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="birthDate">תאריך לידה:</label>
+                <div class="row">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    שנה <span class="caret"></span>
+  </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="type in artistTypes"><a href="#">{{type.displayName}}</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   חודש <span class="caret"></span>
+  </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="type in artistTypes"><a href="#">{{type.displayName}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    יום <span class="caret"></span>
+  </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="type in artistTypes"><a href="#">{{type.displayName}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="proffesion">עיסוק:</label>
+                <div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    יום <span class="caret"></span>
+  </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="type in artistTypes"><a href="#">{{type.displayName}}</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="about">קצת על עצמי:</label>
+                <textarea id="about" class="form-control" rows="3"></textarea>
+            </div>
+            
+  </form>
+        
+            <!--
+        <div class="panel panel-default">
+            <center>
+                <form>
+                    <table>
+                        <tr>
+                            <td width=70%>
+                                <table>
+                                    <tr>
+                                        <td width=200% class="labels"><b>שם פרטי:</b></td>
+                                        <td> <input type="input" class="form-control" id="firstName" placeholder="שם פרטי"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labels"><b>שם משפחה:</b></td>
+                                        <td><input type="input" class="form-control" id="lastName" placeholder="שם משפחה"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labels"><b>שם במה:</b></td>
+                                        <td><input type="input" class="form-control" id="userName" placeholder="שם הבמה"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labels"><b>סיסמה:</b></td>
+                                        <td><input type="input" class="form-control" id="password" placeholder="סיסמה"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labels"><b>אימייל:</b></td>
+                                        <td><input type="input" class="form-control" id="email" placeholder="אימייל"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labels"><b>תאריך לידה:</b></td>
+                                        <td>
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    שנה <span class="caret"></span>
+  </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li ng-repeat="type in artistTypes"><a href="#">{{type.displayName}}</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   חודש <span class="caret"></span>
+  </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li ng-repeat="type in artistTypes"><a href="#">{{type.displayName}}</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="btn-group">
+                                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    יום <span class="caret"></span>
+  </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li ng-repeat="type in artistTypes"><a href="#">{{type.displayName}}</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labels"><b>עיסוק:</b></td>
+                                        <td>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    יום <span class="caret"></span>
+  </button>
+                                                <ul class="dropdown-menu">
+                                                    <li ng-repeat="type in artistTypes"><a href="#">{{type.displayName}}</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="labels"><b>קצת על עצמי:</b></td>
+                                        <td><textarea class="form-control" rows="3"></textarea></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                              
+                                        </td>
+                                        <td>
+                                            <button width=200% id="submitButton" type="button" class="btn btn-default">התחל ליצור!</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+
+                            <td>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="../images/userPic.png" class="img-thumbnail">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button type="button" class="btn btn-default btn-lg btn-block">בחר תמונה...</button>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </center>
+        </div>
+-->
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.title {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #9575CD;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+} 
+
+#userPic {
+    padding-left: 60px;
+    padding-top: 40px;
+}
+
+#buttons {
+    text-align: center;
+    font-family: Guttman Haim;
+    margin: 3px;
+    padding-top: 30px;
+}
+
+#imgSrc {
+     padding-top: 20px;
+    padding-right: 40px;
+}
+
+.Icon {
+    width: 10%;
+    height: 10%;
+}
+
+li {
+    list-style-type: none;
+}
+
+#userDitels {
+    padding-top: 30px;
+}
+
+#AcountPic {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#detalis {
+    text-align: right;
+}
+
+table{
+    text-align: right;
+    
+}
+
+.panel-default {
+    background-color: rgb(213, 216, 217);
+    height: 700px;
+}
+
+.labels{
+
+}
+
+td{
+    height: 500%;
+    margin-bottom: 500px;
+}
+
+.form-horizontal * {
+  direction: rtl;
+}
+
+#submitButton{
+    background-color: rgb(0, 153, 51);
+}
+
+.form-control{
+    width: 300px;
+}
+
+.img {
+    height:20px;
+     width: 30px;
+}
